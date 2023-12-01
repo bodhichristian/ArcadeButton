@@ -20,12 +20,15 @@ struct ColorSelector: View {
                 HStack(spacing: 20) {
                     ForEach(colorOptions, id: \.self) { color in
                         Button {
-                            accentColor = color
+                            withAnimation(.bouncy){
+                                accentColor = color
+                            }
                         } label: {
                             Circle()
                                 .frame(width: 85)
-                                .foregroundStyle(color)
+                                .foregroundStyle(color == accentColor ? color.opacity(0.3) : color)
                         }
+                        .disabled(color == accentColor)
                     }
                 }
             }

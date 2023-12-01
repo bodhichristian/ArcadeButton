@@ -12,9 +12,14 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            LinearGradient(colors: [.white.opacity(0.5), buttonColor], startPoint: .top, endPoint: .bottom)
-                .opacity(0.3)
-                .ignoresSafeArea()
+            LinearGradient(
+                colors: [.white.opacity(0.5), buttonColor],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .opacity(0.3)
+            .ignoresSafeArea()
+            
             VStack {
                 ArcadeButton(color: buttonColor) {
                     // do something
