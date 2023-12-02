@@ -11,7 +11,6 @@
 		AA5978182B19A4160016BCD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5978172B19A4160016BCD6 /* ContentView.swift */; };
 		AA59781A2B19A4170016BCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5978192B19A4170016BCD6 /* Assets.xcassets */; };
 		AA59781D2B19A4170016BCD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA59781C2B19A4170016BCD6 /* Preview Assets.xcassets */; };
-		AA5978242B19A4510016BCD6 /* ColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5978232B19A4510016BCD6 /* ColorSelector.swift */; };
 		AA5978262B19A4900016BCD6 /* ArcadeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5978252B19A4900016BCD6 /* ArcadeButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		AA5978172B19A4160016BCD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA5978192B19A4170016BCD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA59781C2B19A4170016BCD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AA5978232B19A4510016BCD6 /* ColorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelector.swift; sourceTree = "<group>"; };
 		AA5978252B19A4900016BCD6 /* ArcadeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +56,6 @@
 				AA5978152B19A4160016BCD6 /* ArcadeButtonApp.swift */,
 				AA5978172B19A4160016BCD6 /* ContentView.swift */,
 				AA5978252B19A4900016BCD6 /* ArcadeButton.swift */,
-				AA5978232B19A4510016BCD6 /* ColorSelector.swift */,
 				AA5978192B19A4170016BCD6 /* Assets.xcassets */,
 				AA59781B2B19A4170016BCD6 /* Preview Content */,
 			);
@@ -145,7 +142,6 @@
 			files = (
 				AA5978182B19A4160016BCD6 /* ContentView.swift in Sources */,
 				AA5978262B19A4900016BCD6 /* ArcadeButton.swift in Sources */,
-				AA5978242B19A4510016BCD6 /* ColorSelector.swift in Sources */,
 				AA5978162B19A4160016BCD6 /* ArcadeButtonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

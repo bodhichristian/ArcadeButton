@@ -11,25 +11,28 @@ struct ContentView: View {
     @State var buttonColor: Color = .yellow
     
     var body: some View {
-        ZStack{
-            LinearGradient(
-                colors: [.white.opacity(0.5), buttonColor],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .opacity(0.3)
-            .ignoresSafeArea()
-            
-            VStack {
-                ArcadeButton(color: buttonColor) {
-                    // do something
-                }
-                .padding(.vertical, 50)
+        NavigationStack{
+            ZStack{
+                LinearGradient(
+                    colors: [.white.opacity(0.5), buttonColor],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .opacity(0.3)
+                .ignoresSafeArea()
                 
-                ColorSelector(accentColor: $buttonColor)
-                    .padding(.horizontal, 20)
+                VStack {
+                    ArcadeButton(color: buttonColor) {
+                        // do something
+                    }
+                    .padding(.bottom, 50)
+                    
+                    ColorPicker("Select a Color", selection: $buttonColor)
+                        .font(.headline)
+                        .padding()
+                }
+                .navigationTitle("ArcadeButton")
             }
-            
         }
     }
 }
